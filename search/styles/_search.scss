@@ -14,12 +14,6 @@
         width: 50%;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        
-        .input-submit {
-            margin-left: 0;
-            margin-right: 0;
-        }
     }
 }
 
@@ -59,11 +53,9 @@
 
     .input-submit {
         display: block;
-        // min-width so when i put more text into it it resizes
-        min-width: 30%;
         border-radius: 4px;
         padding: 8px 16px;
-        margin: 10px auto;
+        margin: 10px 15px;
         background: #303134;
         cursor: pointer;
     }

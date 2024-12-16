@@ -1,0 +1,25 @@
+@import "./search";
+@import "./advanced-search";
+@import "./nav-bar";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #202124;
+
+    // limit width on huge screens and center
+    .nav-bar, .flex-container {
+        max-width: 2000px;
+        margin: auto;
+    }
+}

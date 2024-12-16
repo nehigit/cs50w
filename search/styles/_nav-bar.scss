@@ -1,0 +1,42 @@
+.nav-bar {
+    height: 100% - 95%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    ul {
+        // remove default styling
+        list-style: none;
+        
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        li {
+            padding: 5px 15px;
+            text-align: center;
+            color: white;
+            border-right: 1px solid gray;
+
+            &:last-child {
+                border: none;
+            }
+         
+            &.current {
+                color: gray;
+            }
+
+            a {
+                // override default styling
+                color: white;
+
+                // remove default styling
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

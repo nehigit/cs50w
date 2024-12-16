@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <title>Image Search</title>
         <link rel="stylesheet" href="./styles/style.css">
     </head>
     <body>
         <nav class="nav-bar">
             <ul>
-                <li class="current">Search</li>
-                <li><a href="./image-search.html">Image search</a></li>
+                <li><a href="./index.html">Search</a></li>
+                <li class="current">Image search</li>
                 <li><a href="./advanced-search.html">Advanced search</a></li>
             </ul>
         </nav>
         <div class="flex-container">
-            <form class="form-search" action="https://google.com/search">
+            <form class="form-search form-image" action="https://google.com/search">
                 <input class="input-text" type="text" name="q">
-                <input class="input-submit" type="submit" value="Google Search">
+                <input class="input-text" type="hidden" name="udm" value="2">
+                <input class="input-submit" type="submit" value="Image Search">
             </form>
         </div>
     </body>

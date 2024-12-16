@@ -1,0 +1,16 @@
+@import "./search";
+
+.form-advanced {
+    input[type="text"] {
+        text-align: left;
+        margin-top: 1px;
+    }
+
+    .flex-container {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+
+    }
+
+}

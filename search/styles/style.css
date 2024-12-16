@@ -29,6 +29,16 @@ body .nav-bar, body .flex-container {
   color: white;
   margin-bottom: 25px;
 }
+.flex-container .flex-container {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.flex-container .flex-container .input-submit {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 .form-search {
   display: flex;
@@ -86,7 +96,7 @@ body .nav-bar, body .flex-container {
 .form-advanced .flex-container {
   width: 100%;
   display: flex;
-  align-items: flex-end;
+  justify-content: flex-end;
 }
 .form-advanced .input-submit {
   margin-left: 0;

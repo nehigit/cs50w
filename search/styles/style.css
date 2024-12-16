@@ -1,9 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #202124;
+}
+body .nav-bar, body .flex-container {
+  max-width: 2000px;
+  margin: auto;
+}
+
 .flex-container {
   height: 95%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.flex-container .main-title {
+  color: white;
+  margin-bottom: 25px;
 }
 
 .form-search {
@@ -45,62 +69,17 @@
 }
 
 @media (min-width: 600px) {
-  form > .input-text {
-    width: 85%;
+  .form-search {
+    width: 75%;
   }
 }
-.flex-container {
-  height: 95%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.form-advanced ::-moz-placeholder {
+  color: gray;
 }
-
-.form-search {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  min-width: 400px;
-  max-width: 600px;
+.form-advanced ::placeholder {
+  color: gray;
 }
-.form-search * {
-  color: white;
-  display: block;
-  font-size: 16px;
-}
-.form-search .input-text {
-  border-radius: 24px;
-  width: 100%;
-  padding: 12px 30px;
-  text-align: center;
-  background: #4d5156;
-}
-.form-search .input-text:hover {
-  background: #5f6368;
-}
-.form-search .input-text:focus {
-  background: #303134;
-  border-color: #202124;
-  outline: none;
-}
-.form-search .input-submit {
-  display: block;
-  min-width: 30%;
-  border-radius: 4px;
-  padding: 8px 16px;
-  margin: 10px auto;
-  background: #303134;
-  cursor: pointer;
-}
-
-@media (min-width: 600px) {
-  form > .input-text {
-    width: 85%;
-  }
-}
-.form-advanced input[type=text] {
+.form-advanced .input-text {
   text-align: left;
   margin-top: 1px;
 }
@@ -108,6 +87,11 @@
   width: 100%;
   display: flex;
   align-items: flex-end;
+}
+.form-advanced .input-submit {
+  margin-left: 0;
+  margin-right: 0;
+  background: #8ab4f8;
 }
 
 .nav-bar {
@@ -140,24 +124,4 @@
 }
 .nav-bar ul li a:hover {
   text-decoration: underline;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  background: #202124;
-}
-body .nav-bar, body .flex-container {
-  max-width: 2000px;
-  margin: auto;
 }/*# sourceMappingURL=style.css.map */

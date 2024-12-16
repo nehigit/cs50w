@@ -1,7 +1,3 @@
-@import "./search";
-@import "./advanced-search";
-@import "./nav-bar";
-
 * {
     margin: 0;
     padding: 0;
@@ -23,3 +19,7 @@ body {
         margin: auto;
     }
 }
+
+@import "./search";
+@import "./advanced-search";
+@import "./nav-bar";

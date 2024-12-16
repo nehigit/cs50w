@@ -4,6 +4,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    .main-title {
+        color: white;
+        margin-bottom: 25px;
+    }
 }
 
 .form-search {
@@ -39,7 +44,7 @@
             outline: none;
         }
     }
-    
+
     .input-submit {
         display: block;
         // min-width so when i put more text into it it resizes
@@ -50,12 +55,10 @@
         background: #303134;
         cursor: pointer;
     }
-
 }
 
 @media (min-width: 600px) {
-    form > .input-text {
-        width: 85%;
+    .form-search {
+        width: 75%;
     }
 }
-
